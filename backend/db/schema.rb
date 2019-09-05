@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_04_224319) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
+    t.string "img_url"
     t.string "description"
     t.integer "price"
     t.integer "quantity"
@@ -37,6 +38,7 @@ ActiveRecord::Schema.define(version: 2019_09_04_224319) do
     t.string "name"
     t.string "email"
     t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
