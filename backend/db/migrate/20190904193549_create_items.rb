@@ -5,8 +5,8 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :description
       t.integer :price
       t.integer :quantity
-      t.string :type
-      t.integer :shop_id
+      t.string :classification
+      t.integer :order_id
 
       t.timestamps
     end

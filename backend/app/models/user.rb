@@ -1,4 +1,5 @@
 class User < ApplicationRecord
-    has_one :shop
+    has_many :orders
+    has_many :items, through: :order
 
 end
