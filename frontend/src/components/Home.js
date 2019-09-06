@@ -14,20 +14,38 @@ export default class Home extends Component {
 
                 <div className="category">
                     <h1>BUY WEAPONS WITHOUT GOING TO KHAZAKHSTAN</h1>
-                    <div class="row">
-                        <div class="col-sm">
-                            <h2>Vehicals</h2>
-                            <p>Lots of things going on in lots of places around herer</p>
+                    <div className="row">
+                        <div className="col-sm">
+                            <div className="card" style={{width: "16rem"}}>
+                                <img src="https://cdn.ironpla.net/i/1811/679/1811679_3945_159_0001.jpg" className="card-img-sm" />
+                                <div className="card-body">
+                                    <h5 className="card-title"><strong>Vehicles</strong></h5>
+                                    <p className="card-text">Search from an assortment of used military vehicles</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm">
-                            <h2>Boots</h2>
-                            <p>Lots of things going on in lots of places around herer</p>
+                        <div className="col-sm">
+                            <div className="card" style={{width: "16rem"}}>
+                                <img src="https://stockx.imgix.net/Yeezy-Season-Three-Military-Boot-Rock.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1538080256" className="card-img-sm" />
+                                <div className="card-body">
+                                    <h5 className="card-title"><strong>Boots</strong></h5>
+                                    <p className="card-text" id="card-desc">Search from an assortment of YEEZY's and used military boots</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm">
-                            <h2>Guns</h2>
-                            <p>Lots of things going on in lots of places around herer</p>
+                        <div className="col-sm">
+                            <div className="card" style={{width: "16rem"}}>
+                                <img src="https://cdn3.volusion.com/jodua.csmpx/v/vspfiles/photos/PRAK47-2.jpg?1541702333" className="card-img-sm" />
+                                <div className="card-body">
+                                    <h5 className="card-title"><strong>Guns</strong></h5>
+                                    <p className="card-text" id="card-desc">We've narrowed down the best guns for you</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <form action="/shop">
+                        <button className="btn-lg btn-success" type="submit">Shop Now</button>
+                    </form>                           
                 </div>
                 <div className="how">
 
