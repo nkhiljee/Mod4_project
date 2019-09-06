@@ -4,7 +4,9 @@ export default class ItemsHeader extends Component {
     render() {
         return(
             <div>
-                
+                <carousel>
+                    
+                </carousel>
             </div>
         )
     }

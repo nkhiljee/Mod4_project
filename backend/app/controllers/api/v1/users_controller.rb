@@ -13,8 +13,8 @@ class Api::V1::UsersController < ApplicationController
 
     # private
 
-    # def order_params
-    #     params.require(:order).permit(:number, :user_id)
+    # def user_params
+    #     params.require(:order).permit(:name, :email :password)
     # end
 
 end
