@@ -13,7 +13,21 @@ export default class Home extends Component {
                 </div>
 
                 <div className="category">
-                
+                    <h1>BUY WEAPONS WITHOUT GOING TO KHAZAKHSTAN</h1>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h2>Vehicals</h2>
+                            <p>Lots of things going on in lots of places around herer</p>
+                        </div>
+                        <div class="col-sm">
+                            <h2>Boots</h2>
+                            <p>Lots of things going on in lots of places around herer</p>
+                        </div>
+                        <div class="col-sm">
+                            <h2>Guns</h2>
+                            <p>Lots of things going on in lots of places around herer</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="how">
 

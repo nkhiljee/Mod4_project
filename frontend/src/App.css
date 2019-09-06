@@ -192,6 +192,7 @@ body
   margin-top: 20px;
   padding-bottom: 20px;
 
+
 }
 
 .card
@@ -203,7 +204,8 @@ body
   animation-direction: reverse;  
   animation-fill-mode: reverse; */
   box-shadow: 0 1rem 1rem rgba(0,0,0,.175);
-  height: 500px
+  height: 500px;
+
 }
 
 .card img 
@@ -278,7 +280,4 @@ form
   transform: translate(0, 80%);
   color: #efe7d5;
   text-shadow: 1px 1px #000000;
-
-
-
 }
