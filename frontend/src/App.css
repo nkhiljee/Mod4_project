@@ -1,12 +1,30 @@
+.btn-success{
+  background-color: rgb(153, 49, 49) !important;
+  border-color: rgb(153, 49, 49) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: rgb(194, 62, 62) !important;
+  border-color: rgb(194, 62, 62) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-lg:focus,.btn-lg:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
   background-color: #282c34;
@@ -20,15 +38,6 @@
 }
 
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 body
 {
@@ -111,7 +120,7 @@ body
   z-index: 10;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  padding-top:10px;
+  padding-top:15px;
   padding-bottom:10px
 }
 
@@ -146,6 +155,28 @@ body
   height: 400px
 }
 
+
+.itemsheader
+{
+  height: calc(70vh - 65px)!important;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.wallpaperscraft.com/image/military_china_parade_mrls_31449_1600x900.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.carousel p
+{
+  margin-top: 70px;
+  font-family: 'Oswald', sans-serif;
+  color:#efe7d5;
+  font-size: 100px;
+}
+
+.carousel button
+{
+  margin-top: 100px
+}
 
 
 .cardContainer

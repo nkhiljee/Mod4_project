@@ -10,7 +10,7 @@ export default class Item extends Component {
                         <h5 className="card-title">{this.props.item.name}</h5>
                         <p className="card-text" id="card-desc">{this.props.item.description}</p>
                         <p className="card-text">Price: ${this.props.item.price}</p>
-                        <button className="btn-sm btn-success" onClick={() => this.props.addToCart(this.props.item)}>Add to Cart</button>
+                        <button type="button" className="btn btn-success" onClick={() => this.props.addToCart(this.props.item)}>Add to Cart</button>
                     </div>
                 </div>
             </div>
