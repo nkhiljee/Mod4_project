@@ -20,13 +20,13 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-      // fetch("http://localhost:3000/api/v1/items", {
-      //     method: "GET",
-      //     headers: {
-      //         Authorization: "Barer {token}"
-      //     }
-      // })
-      fetch("http://localhost:3000/api/v1/items")
+      fetch("http://localhost:3000/api/v1/items", {
+          method: "GET",
+          headers: {
+              Authorization: `Bearer ${localStorage.token}`
+          }
+      })
+      // fetch("http://localhost:3000/api/v1/items")
       .then(res => res.json())
       .then(items => {
           this.setState({
