@@ -7,6 +7,7 @@ import ItemsContainer from './components/ItemsContainer'
 import Footer from './components/Footer'
 import Cart from './components/Cart'
 
+
 import './App.css';
 
 class App extends React.Component {
