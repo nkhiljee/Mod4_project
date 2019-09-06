@@ -3,6 +3,7 @@
   border-color: rgb(153, 49, 49) !important;
   outline: none !important;
   box-shadow: none !important;
+  color: #FFF !important
 }
 
 .btn-success:hover, .btn-success:active, .btn-success:visited {
@@ -10,15 +11,21 @@
   border-color: rgb(194, 62, 62) !important;
   outline: none !important;
   box-shadow: none !important;
+  color: #FFF !important
+
 }
 .btn:focus,.btn:active {
   outline: none !important;
   box-shadow: none;
+  color: #FFF !important
+
 }
 
 .btn-lg:focus,.btn-lg:active {
   outline: none !important;
   box-shadow: none !important;
+  color: #FFF !important
+
 }
 
 .App {
@@ -145,14 +152,57 @@ body
 .category
 {
   background-color: #efe7d5;
-  height: 400px
+  height: 600px
+}
 
+.category h1
+{
+  padding-top: 40px;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+}
+
+.row
+{
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  padding-left: 160px !important;
+  padding-right: 120px !important;
+  justify-items: center;
+  padding-top: 20px
+
+}
+
+
+.col-sm .card
+{
+  height: 90%;
+}
+
+.col-sm .card img
+{
+  height: 200px;
+  /* width: 200px; */
+}
+
+
+.col-sm h2
+{
+  padding-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 34px;
+
+}
+
+.col-sm p
+{
+  font-family: 'Oswald', sans-serif;
 }
 
 .how
 {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
-  height: 400px
+  height: 500px
 }
 
 
@@ -160,6 +210,7 @@ body
 {
   height: calc(70vh - 65px)!important;
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.wallpaperscraft.com/image/military_china_parade_mrls_31449_1600x900.jpg) !important;
+  /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.wallpaperscraft.com/image/cat_fluffy_jacket_military_66330_1600x900.jpg) !important; */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
