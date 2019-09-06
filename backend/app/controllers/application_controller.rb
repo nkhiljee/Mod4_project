@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
         # { 'Authorization': 'Bearer <token>' }
         request.headers['Authorization']
         # byebug
-      end
+    end
     
       def current_user
         # byebug

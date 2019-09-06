@@ -11,31 +11,9 @@ import './App.css';
 
 class App extends React.Component {
 
-  constructor(){
-    super()
-    this.state = {
-        items: [],
-        itemsMaster: []
-    }
-  }
 
-  componentDidMount(){
-      fetch("http://localhost:3000/api/v1/items", {
-          method: "GET",
-          headers: {
-              Authorization: `Bearer ${localStorage.token}`
-          }
-      })
-      // fetch("http://localhost:3000/api/v1/items")
-      .then(res => res.json())
-      .then(items => {
-          this.setState({
-              items: items,
-              itemsMaster: items,
 
-          })
-      })
-  }
+
 
   addToCart = (e) => {
     console.log(e)
@@ -75,8 +53,8 @@ class App extends React.Component {
           <Navbar/>
           <Switch>
             <Route path="/cart" render = {() => <Cart /> } />
-            <Route path="/shop" render = {() => <ItemsContainer addToCart={this.addToCart} items={this.state.items}/> } />
-            <Route path="/signin" render = {() => <Signin /> } />
+            <Route path="/shop" render = {() => <ItemsContainer addToCart={this.addToCart} /> } />
+            <Route path="/signin" render = {(routerProps) => <Signin {...routerProps} /> } />
             <Route path="/" render = {() => <Home /> } />
           </Switch>
           <Footer />

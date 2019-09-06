@@ -22,12 +22,11 @@ export default class Signin extends Component {
           })
         })
         .then(res => res.json())
-        .then(console.log
-            // data => {
-            // // localStorage.token = data.token
+        .then(data => {
+            localStorage.token = data.token
+            this.props.history.push("/shop")
             // localStorage.setItem("token",data.token)
-        // }
-        )
+        })
       }
 
 
@@ -45,7 +44,7 @@ export default class Signin extends Component {
                         <input type="password" className="form-control" name="password" id="exampleInputPassword1" placeholder="Password" onChange={this.handleChange}/>
                     </div>
                     
-                    <button type="submit" className="btn btn-success"><a href="/shop">Sign In</a></button>
+                    <button type="submit" className="btn btn-success">Sign In</button>
                 </form>
             </div>
         )
