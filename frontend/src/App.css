@@ -166,7 +166,7 @@ body
 {
   margin-left: 20px !important;
   margin-right: 20px !important;
-  padding-left: 160px !important;
+  padding-left: 130px !important;
   padding-right: 120px !important;
   justify-items: center;
   padding-top: 20px
@@ -202,7 +202,31 @@ body
 .how
 {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
-  height: 500px
+  height: 400px;
+  color: #efe7d5;
+}
+
+.how h1
+{
+  padding-top: 40px;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-bottom: 30px
+}
+
+.test-desc
+{
+  font-family: 'Oswald', sans-serif;
+  height: 70px;
+  font-size: 26px;
+
+}
+
+.test-name
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }
 
 

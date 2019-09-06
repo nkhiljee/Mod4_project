@@ -16,7 +16,7 @@ export default class Home extends Component {
                     <h1>BUY WEAPONS WITHOUT GOING TO KHAZAKHSTAN</h1>
                     <div className="row">
                         <div className="col-sm">
-                            <div className="card" style={{width: "16rem"}}>
+                            <div className="card" style={{width: "18rem"}}>
                                 <img src="https://cdn.ironpla.net/i/1811/679/1811679_3945_159_0001.jpg" className="card-img-sm" />
                                 <div className="card-body">
                                     <h5 className="card-title"><strong>Vehicles</strong></h5>
@@ -25,7 +25,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="col-sm">
-                            <div className="card" style={{width: "16rem"}}>
+                            <div className="card" style={{width: "18rem"}}>
                                 <img src="https://stockx.imgix.net/Yeezy-Season-Three-Military-Boot-Rock.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1538080256" className="card-img-sm" />
                                 <div className="card-body">
                                     <h5 className="card-title"><strong>Boots</strong></h5>
@@ -34,7 +34,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="col-sm">
-                            <div className="card" style={{width: "16rem"}}>
+                            <div className="card" style={{width: "18rem"}}>
                                 <img src="https://cdn3.volusion.com/jodua.csmpx/v/vspfiles/photos/PRAK47-2.jpg?1541702333" className="card-img-sm" />
                                 <div className="card-body">
                                     <h5 className="card-title"><strong>Guns</strong></h5>
@@ -48,7 +48,19 @@ export default class Home extends Component {
                     </form>                           
                 </div>
                 <div className="how">
-
+                    <h1>Testimonials</h1>
+                    <div class="row">
+                        <div class="col">
+                        <h4 className="test-desc"><em>"Military supply provided us with all supplies we needed to get the job done without dealing with 'the other side' "</em></h4>
+                        <br/>
+                        <h6 className="test-name"><strong> - Idi Amin</strong></h6>
+                        </div>
+                        <div class="col">
+                        <h4 className="test-desc"><em>"Well well well military supply 'off the record' supplied us"</em></h4>
+                        <br/>
+                        <h6 className="test-name"><strong> - Muammar Gaddafi</strong></h6>
+                        </div>
+                    </div>                                               
                 </div>
 
             </div>

@@ -10,9 +10,9 @@ export default class Cart extends Component {
                 <div className="cartitems">
                     <CartItems />
                 </div>
-                <div className="cartlist">
+                {/* <div className="cartlist">
                     <CartList/>
-                </div>
+                </div> */}
                 
             </div>
         )

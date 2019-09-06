@@ -21,13 +21,13 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-      // fetch("http://localhost:3000/api/v1/items", {
-      //     method: "GET",
-      //     headers: {
-      //         Authorization: "Barer {token}"
-      //     }
-      // })
-      fetch("http://localhost:3000/api/v1/items")
+      fetch("http://localhost:3000/api/v1/items", {
+          method: "GET",
+          headers: {
+              Authorization: `Bearer ${localStorage.token}`
+          }
+      })
+      // fetch("http://localhost:3000/api/v1/items")
       .then(res => res.json())
       .then(items => {
           this.setState({
@@ -40,31 +40,7 @@ class App extends React.Component {
 
   addToCart = (e) => {
     console.log(e)
-
-    fetch("http://localhost:3000/api/v1/orders", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-          number: 1,  // NOT IMPORTANT OR JUST USE ORDER ID
-          user_id: 1, //GET FROM LOCAL STORAGE OR UPDATE BACKEND
-          items: [
-            // {
-            //   id: 1,
-            //   name: "2000 AM General",
-            //   img_url: "https://cdn.ironpla.net/i/796/545/796545_6002_160_0001.jpg",
-            //   description: "6.5L Diesel Engine, Automatic Transmission w/Park & Overdrive, 4x4, 10,300 lb. GVWR, 4 Door, Hard Top, Slant Back, Fording Kit, Tow Carrier Body, 37x12.50R16.5 Tires. ***No further demilitarization is required. The HMMWV is available for pick up as shown.*** The Humvee sells with a clean SF97.",
-            //   price: 15000,
-            //   quantity: 1,
-            //   classification: "Vehicle",
-            //   order_id: 1
-            // }
-          ]
-      })
-    })
-    .then(res=> res.json())
-    .then()
+    
 
   }
   
