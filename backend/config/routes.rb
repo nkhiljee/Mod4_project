@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :users, only: [:index, :show]
       resources :orders, only: [:index, :show, :create, :update, :destroy]
       resources :items, only: [:index, :show]
+      post '/login', to: 'auth#create'
     end
   end
 end
