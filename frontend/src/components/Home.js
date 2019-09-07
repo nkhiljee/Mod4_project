@@ -1,20 +1,38 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
+
+    state = {
+        bg: {}
+    }
+
+
+    move = (e) => {
+        let bg = {
+            backgroundPositionX: -e.screenX / 15 + "px",
+            backgroundPositionY: -e.screenY / 15 + "px"
+        }
+        this.setState({
+            bg: bg
+        })
+    }
+    
+
     render() {
         return(
             <div>
-                <div className="top">
-                    <div className="darkblock">
+                <div className="top" style={this.state.bg} onMouseMove={(e)=> this.move(e)}>
+                    <div className="darkblock" >
                         <h2>BE AS STRONG AS YOUR MILITARY</h2>
                         <img src="https://demo.gridgum.com/wordpress/military//wp-content/uploads/2015/04/logo-khaki.png"/>
-                        <h4>GEAR UP AND MAN UP WITH A ROCKET LAUNCHER AND SOME YEEZY'S</h4>
+                        <h4>GEAR UP WITH A ROCKET LAUNCHER AND SOME YEEZY'S</h4>
                     </div>
                 </div>
 
                 <div className="category">
-                    <h1>BUY WEAPONS WITHOUT GOING TO KHAZAKHSTAN</h1>
-                    <div className="row">
+                    <h1>ARM YOUR INTENTIONS</h1>
+                    <div className="row" id="row">
                         <div className="col-sm">
                             <div className="card" style={{width: "18rem"}}>
                                 <img src="https://cdn.ironpla.net/i/1811/679/1811679_3945_159_0001.jpg" className="card-img-sm" />
@@ -43,22 +61,21 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <form action="/shop">
-                        <button className="btn-lg btn-success" type="submit">Shop Now</button>
-                    </form>                           
+                    <br/>
+                    <Link to="/shop"><button className="btn-lg btn-success" type="submit">Shop Now</button></Link>
                 </div>
                 <div className="how">
                     <h1>Testimonials</h1>
                     <div class="row">
                         <div class="col">
-                        <h4 className="test-desc"><em>"Military supply provided us with all supplies we needed to get the job done without dealing with 'the other side' "</em></h4>
+                        <h4 className="test-desc"><em>"Military Supply has been one of our trusted subcontractors for decades. They are consistent."</em></h4>
                         <br/>
-                        <h6 className="test-name"><strong> - Idi Amin</strong></h6>
+                        <h6 className="test-name"><strong> - Lockheed Martin</strong></h6>
                         </div>
                         <div class="col">
-                        <h4 className="test-desc"><em>"Well well well military supply 'off the record' supplied us"</em></h4>
+                        <h4 className="test-desc"><em>"Military Supply is an emerging company in this space that we have our gaze set on"</em></h4>
                         <br/>
-                        <h6 className="test-name"><strong> - Muammar Gaddafi</strong></h6>
+                        <h6 className="test-name"><strong> - Department of Defense</strong></h6>
                         </div>
                     </div>                                               
                 </div>
