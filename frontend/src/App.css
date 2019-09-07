@@ -317,6 +317,7 @@ body
   /* object-fit: contain */
 }
 
+
 .card-title
 {
   font-family: 'Oswald', sans-serif;
@@ -338,10 +339,34 @@ body
 
 /*  ---------  END SHOP PAGE -----------*/
 /*  --------- CART PAGE -----------*/
+.cart
+{
+  min-height: calc(100vh - 65px)!important;
+
+}
+
+.list-group-item
+{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+}
+
+#yourcart
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+#yourtotal
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: right
+}
 
 .cartitems
 {
-  /* text-align: center */
   justify-items: center;
 
 }
@@ -349,10 +374,49 @@ body
 .shoppingCart
 {
   background-color: #819359 !important;
-  width: 70%;
+  width: 80%;
   justify-items: center;
+}
 
-  
+.cartimg
+{
+  height: 80px;
+  width: 120px
+}
+
+#cartname
+{
+  font-family: 'Oswald', sans-serif;
+  text-align: left !important;
+  font-size: 20px
+}
+
+#cartdesc
+{
+  font-family: 'Oswald', sans-serif;
+  text-align: left !important;
+  font-size: 14px
+}
+
+#cartprice
+{
+  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  text-align: right !important;
+  font-size: 18px;
+
+}
+
+.cartqty
+{
+  text-align: left !important;
+  font-size: 18px;
+
+}
+
+.col-
+{
+  width:10% !important
 }
 
 /*  --------- END CART PAGE -----------*/

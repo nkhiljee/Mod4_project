@@ -62,7 +62,11 @@ export default class Home extends Component {
                         </div>
                     </div>
                     <br/>
+                    {(localStorage.token) ?
                     <Link to="/shop"><button className="btn-lg btn-success" type="submit">Shop Now</button></Link>
+                    :<Link to="/signin"><button className="btn-lg btn-success" type="submit">Shop Now</button></Link>
+                    }
+                    
                 </div>
                 <div className="how">
                     <h1>Testimonials</h1>
