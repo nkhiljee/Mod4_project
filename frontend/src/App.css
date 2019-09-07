@@ -1,3 +1,5 @@
+/*  --------- GLOBAL-----------*/
+
 .btn-success{
   background-color: rgb(153, 49, 49) !important;
   border-color: rgb(153, 49, 49) !important;
@@ -28,6 +30,10 @@
 
 }
 
+/*  --------- GLOBAL-----------*/
+/*  --------- APP RELATED-----------*/
+
+
 .App {
   text-align: center;
 }
@@ -44,6 +50,9 @@
   color: white;
 }
 
+/*  --------- END APP RELATED-----------*/
+
+/*  --------- BODY GLOBAL -----------*/
 
 
 body
@@ -51,6 +60,11 @@ body
   background-color: #EEECDE !important;
 
 }
+
+/*  --------- END BODY GLOBAL -----------*/
+
+/*  --------- NAVBAR -----------*/
+
 
 .navbar
 {
@@ -109,12 +123,17 @@ body
   float: right !important
 }
 
+/*  --------- END NAVBAR -----------*/
+/*  --------- HOME PAGE CONTAINERS -----------*/
+
 
 .top
 {
   height: calc(100vh - 65px)!important;
   background-color: #5a6346 !important;
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://demo.gridgum.com/wordpress/military/wp-content/uploads/2015/04/slide05.jpg);
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 
 .darkblock
@@ -142,8 +161,8 @@ body
 {
   color: #efe7d5;
   padding:10px;
-  padding-left:40px;
-  padding-right:40px;
+  padding-left:60px;
+  padding-right:60px;
 
   text-shadow: 1px 1px #000000;
 
@@ -162,7 +181,7 @@ body
   font-size: 40px;
 }
 
-.row
+#row
 {
   margin-left: 20px !important;
   margin-right: 20px !important;
@@ -204,6 +223,8 @@ body
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
   height: 400px;
   color: #efe7d5;
+  padding-left:100px;
+  padding-right:100px
 }
 
 .how h1
@@ -228,6 +249,10 @@ body
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
 }
+
+/*  --------- END HOME PAGE CONTAINERS -----------*/
+
+/*  --------- SHOP PAGE -----------*/
 
 
 .itemsheader
@@ -311,6 +336,31 @@ body
   overflow: hidden;
 }
 
+/*  ---------  END SHOP PAGE -----------*/
+/*  --------- CART PAGE -----------*/
+
+.cartitems
+{
+  /* text-align: center */
+  justify-items: center;
+
+}
+
+.shoppingCart
+{
+  background-color: #819359 !important;
+  width: 70%;
+  justify-items: center;
+
+  
+}
+
+/*  --------- END CART PAGE -----------*/
+
+/*  --------- SIGNIN PAGE -----------*/
+
+
+
 .signin
 {
   text-align: center;
@@ -338,6 +388,10 @@ form
   text-align: center;
   width: 100%
 }
+
+/*  ---------  END SIGNIN PAGE -----------*/
+
+/*  --------- FOOTER -----------*/
 
 
 .footer

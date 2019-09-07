@@ -25,6 +25,7 @@ export default class Signin extends Component {
         .then(data => {
             localStorage.token = data.token
             this.props.history.push("/shop")
+            this.props.loggedIn()
             // localStorage.setItem("token",data.token)
         })
       }

@@ -12,24 +12,34 @@ import './App.css';
 
 class App extends React.Component {
 
+  state={
+    loggedIn: false,
+    cart: []
+  }
 
+  login = () => {
+    this.setState({
+      loggedIn: !this.state.loggedIn
+    })
+  }
 
   addToCart = (e) => {
-    console.log(e)
-    
-
+    this.setState({
+      cart: [...this.state.cart, e]
+    })
+    // this.props.history.push(this.state.cart)
   }
-  
 
   render(){
+    console.log(this.state.cart)
     return (
       <BrowserRouter>
         <div className="App">
           <Navbar/>
           <Switch>
-            <Route path="/cart" render = {() => <Cart /> } />
-            <Route path="/shop" render = {() => <ItemsContainer addToCart={this.addToCart} /> } />
-            <Route path="/signin" render = {(routerProps) => <Signin {...routerProps} /> } />
+            <Route path="/cart" render = {(routerProps) => <Cart {...routerProps} cart={this.state.cart}/> } />
+            <Route path="/shop" render = {(routerProps) => <ItemsContainer {...routerProps} addToCart={this.addToCart} /> } />
+            <Route path="/signin" render = {(routerProps) => <Signin {...routerProps} loggedIn={this.login} /> } />
             <Route path="/" render = {() => <Home /> } />
           </Switch>
           <Footer />
