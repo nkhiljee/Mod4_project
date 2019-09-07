@@ -14,7 +14,7 @@ class App extends React.Component {
 
   state={
     loggedIn: false,
-    cart: []
+    cart: [],
   }
 
   login = () => {
@@ -24,20 +24,53 @@ class App extends React.Component {
   }
 
   addToCart = (e) => {
+    const distinct = (value, index, self) => {
+      // console.log(value.id)
+      // console.log(index)
+      let selfie = (self.map(i => i.id))
+      // console.log(selfie)
+      // return self.indexOf(value) === index
+      return selfie.indexOf(value.id) === index
+
+    } 
+
     this.setState({
-      cart: [...this.state.cart, e]
+      cart: [...this.state.cart, e],
+    }, () => {    
+    this.setState({
+      cart: this.state.cart.filter(distinct)
     })
-    // this.props.history.push(this.state.cart)
+  })
   }
 
+  quantityChange = (e, item) => {
+    // console.log(e.target.value)
+    // console.log(item)
+    let array = this.state.cart.map(i => {
+      if (i.id === item.id) {
+        i.quantity = e.target.value
+        return i
+      } else {
+        return i
+      }
+    })
+    this.setState({
+      cart: array
+    })
+  }
+
+
   render(){
-    console.log(this.state.cart)
+    // console.clear()
+    // console.log(this.state.cart)
+    // console.log(this.state.array)
+
     return (
       <BrowserRouter>
         <div className="App">
           <Navbar/>
           <Switch>
-            <Route path="/cart" render = {(routerProps) => <Cart {...routerProps} cart={this.state.cart}/> } />
+            <Route path="/cart" render = {(routerProps) => <Cart {...routerProps} quantityChange={this.quantityChange} cart={this.state.cart}/> } />
             <Route path="/shop" render = {(routerProps) => <ItemsContainer {...routerProps} addToCart={this.addToCart} /> } />
             <Route path="/signin" render = {(routerProps) => <Signin {...routerProps} loggedIn={this.login} /> } />
             <Route path="/" render = {() => <Home /> } />

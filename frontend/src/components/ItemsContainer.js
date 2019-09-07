@@ -35,6 +35,16 @@ export default class ItemsContainer extends Component {
             <div>
                 <ItemsHeader />
                 <div className="cardContainer">
+                {/* {(this.props.alert === true) ? 
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Item Added!</strong> Check your cart.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                
+                : ""
+                } */}
                 {this.state.items.map(item => <Item addToCart={this.props.addToCart} item={item}/>)}
                 </div>
             </div>
