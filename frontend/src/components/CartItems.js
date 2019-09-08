@@ -42,6 +42,9 @@ export default class CartItems extends Component {
                             <div className="col-" id="cartprice">
                             ${price}
                             </div>
+                            <div className="col-" id="cartremove">
+                            <strong onClick={() => this.props.removeItem(this.props.item)}>X</strong>
+                            </div>
                         </div>
                     </div>
                 </div>

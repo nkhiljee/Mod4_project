@@ -9,7 +9,7 @@ export default class ItemsHeader extends Component {
                 <div className="carousel carousel-inner">
                     <p>BLOW OUT SALE!</p>
                     {/* <form action="/cart"> */}
-                    <Link to="/cart"><button className="btn-lg btn-success">CART</button></Link>
+                    <Link to="/cart"><button className="btn-lg btn-success">Cart</button></Link>
                     {/* </form> */}
                 </div>
             </div>
