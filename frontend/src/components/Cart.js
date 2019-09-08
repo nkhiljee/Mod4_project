@@ -4,9 +4,8 @@ import CartItems from './CartItems'
 
 
 export default class Cart extends Component {
-    render() {
-        // console.log(this.props.history)
-        // console.log(this.props.cart)
+
+    totalPrice = () => {
         let totalPrice = 0
         if (this.props.cart.length !== 0){
             for (let i=0; i < this.props.cart.length; i++) {
@@ -15,7 +14,10 @@ export default class Cart extends Component {
         } else {
             totalPrice = 0
         }
-console.log(totalPrice)
+        return totalPrice
+    }
+
+    render() {
 
         return(
             <div>
@@ -24,14 +26,17 @@ console.log(totalPrice)
                         <div className="col col-">
                         </div>
                         <div className="col col-lg">
-                            <div style={{width: "60rem"}}><br/><br/>
+                            <div style={{width: "60em"}}><br/><br/>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item title" id="yourcart">Your Cart</li>
-                                    {this.props.cart.map(item => <li className="list-group-item"><CartItems quantityChange={this.props.quantityChange} item={item}/></li>)}  
-                                    <li className="list-group-item title" id="yourtotal">Total: {totalPrice} </li>
-                                
+                                    {(this.props.cart.length !== 0) ? 
+                                    this.props.cart.map(item => <li className="list-group-item"><CartItems quantityChange={this.props.quantityChange} item={item} removeItem={this.props.removeItem}/></li>)
+                                    : <li className="list-group-item title" id="cartempty"><span>Your cart is empty</span></li>
+                                    } 
+                                    <li className="list-group-item title" id="yourtotal">Total: ${this.totalPrice()} </li>
+                                    <li className="list-group-item title"><button className="btn btn-success">Checkout</button></li>
                                 </ul>
-                            </div>
+                            </div><br/><br/>
                         </div>
                         <div className="col col-">
                         </div>

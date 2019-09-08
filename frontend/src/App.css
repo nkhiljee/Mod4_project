@@ -358,6 +358,20 @@ body
   font-size: 24px;
 }
 
+#cartempty
+{
+  font-family: 'Oswald', sans-serif;
+  color: rgb(153, 49, 49)
+
+}
+
+#cartremove
+{
+  color: rgb(153, 49, 49);
+  width: 30px !important;
+  text-align: right
+}
+
 #yourtotal
 {
   font-family: 'Oswald', sans-serif;
