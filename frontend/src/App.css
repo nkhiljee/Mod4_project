@@ -130,8 +130,10 @@ body
 .top
 {
   height: calc(100vh - 65px)!important;
+  /* width: calc(100vw) !important; */
   background-color: #5a6346 !important;
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://demo.gridgum.com/wordpress/military/wp-content/uploads/2015/04/slide05.jpg);
+  background-size: auto;
 }
 
 .darkblock
@@ -177,6 +179,9 @@ body
   padding-top: 40px;
   font-family: 'Anton', sans-serif;
   font-size: 40px;
+  color: #819359;
+  text-shadow: 1px 1px #000000;
+
 }
 
 #row
@@ -269,7 +274,8 @@ body
   font-size: 40px;
   padding-top: 70px;
   padding-bottom: 30px;
-  /* text-shadow: 2px 2px #000000; */
+  color: #819359;
+  text-shadow: 1px 1px #000000;
 }
 
 .aboutsub

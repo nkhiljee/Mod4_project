@@ -19,9 +19,6 @@ export default class Home extends Component {
         })
     }
 
-
-    
-
     render() {
         return(
             <div>
@@ -89,7 +86,7 @@ export default class Home extends Component {
                 <div className="about">
                     <div className="row">
                         <div className="col">
-                            <h1>About Us</h1>
+                            <h1>Contact Us</h1>
                             <div className = "row">
                                 <div className="col-">
                                     <h5 className="aboutsub">Address:</h5>

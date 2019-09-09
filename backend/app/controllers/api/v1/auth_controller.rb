@@ -10,7 +10,7 @@ class Api::V1::AuthController < ApplicationController
         # byebug
         if user && user.authenticate(params[:password])
             # byebug
-            render json: {email: user.email, token: encode_token({user_id: user.id}) }
+            render json: {email: user.email, token: encode_token({user_id: user.id}), id: user.id }
         else
             render json: {error: "Invalid email or password"}
         end

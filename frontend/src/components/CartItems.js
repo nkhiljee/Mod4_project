@@ -26,7 +26,7 @@ export default class CartItems extends Component {
                                 </div>
                             </div>
                             <div className="col-" id="cartqty">
-                                <select class="form-control" value={this.props.item.quantity} onChange={(e) => this.props.quantityChange(e, this.props.item)}>
+                                <select className="form-control" value={this.props.item.quantity} onChange={(e) => this.props.quantityChange(e, this.props.item)}>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
