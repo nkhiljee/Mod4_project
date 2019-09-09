@@ -14,26 +14,26 @@ export default class Navbar extends Component {
                     
                     <div className="navbar-nav ml-auto" id="navbarNavAltMarkup">
                     {(localStorage.token)  ?
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
                                 <Link className="nav-item nav-link" to="/">Home</Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-item nav-link" to="/shop">Shop</Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                             <Link className="nav-item nav-link" to="/cart">Cart</Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <a className="nav-item nav-link" href="/" onClick={this.logout}>Logout</a>
                             </li>
                         </ul>   
                     :
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
                         <Link className="nav-item nav-link" to="/">Home</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                         <Link className="nav-item nav-link" to="/signin">Sign In</Link>
                         </li>
                     </ul> 

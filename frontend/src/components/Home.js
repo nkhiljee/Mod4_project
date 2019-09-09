@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
+import SimpleMap from './Map'
 
 export default class Home extends Component {
 
@@ -17,6 +18,8 @@ export default class Home extends Component {
             bg: bg
         })
     }
+
+
     
 
     render() {
@@ -83,7 +86,32 @@ export default class Home extends Component {
                         </div>
                     </div>                                               
                 </div>
-
+                <div className="about">
+                    <div className="row">
+                        <div className="col">
+                            <h1>About Us</h1>
+                            <div className = "row">
+                                <div className="col-">
+                                    <h5 className="aboutsub">Address:</h5>
+                                    <h5 className="aboutsub">Hours:</h5>
+                                    <h5 className="aboutsub">Email:</h5>
+                                    <h5 className="aboutsub">Sales:</h5>
+                                    <h5 className="aboutsub">Service:</h5>
+                                </div>
+                                <div className="col">
+                                    <h5 className="aboutsub1">800 S Fort Hood St, Killeen, TX 76541</h5>
+                                    <h5 className="aboutsub1">10AM - 8PM | M-F</h5>
+                                    <h5 className="aboutsub1">support@militarysupply.com</h5>
+                                    <h5 className="aboutsub1">1-800-MSUPPLY</h5>
+                                    <h5 className="aboutsub1">1-800-SERVICE</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col" id="map">
+                            <SimpleMap/>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

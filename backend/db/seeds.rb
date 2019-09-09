@@ -12,10 +12,13 @@ Order.destroy_all
 Item.destroy_all
 
 u1 = User.create(name: "User1", email: "user1@gmail.com", password: "password")
+u2 = User.create(name: "Test", email: "test@gmail.com", password: "password")
+u3 = User.create(name: "Rambo", email: "rambo@gmail.com", password: "password")
 
-o1 = Order.create(number: 1, user_id: u1.id)
-o2 = Order.create(number: 2, user_id: u1.id)
-o3 = Order.create(number: 3, user_id: u1.id)
+
+o1 = Order.create(user_id: u1.id)
+o2 = Order.create(user_id: u1.id)
+o3 = Order.create(user_id: u1.id)
 
 
 
