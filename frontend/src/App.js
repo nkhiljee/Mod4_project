@@ -15,6 +15,7 @@ class App extends React.Component {
   state={
     loggedIn: false,
     cart: [],
+    readOrderFlag: false
   }
 
   login = () => {
@@ -59,14 +60,14 @@ class App extends React.Component {
       })
   }
 
-
   render(){
     return (
       <BrowserRouter>
         <div className="App">
           <Navbar/>
           <Switch>
-            <Route path="/cart" render = {(routerProps) => <Cart {...routerProps} quantityChange={this.quantityChange} cart={this.state.cart} removeItem={this.removeItem}/> } />
+            <Route path="/order" render = {(routerProps) => <Cart {...routerProps} quantityChange={this.quantityChange} cart={this.state.cart} removeItem={this.removeItem} readOrderFlag={this.state.readOrderFlag}/> } />
+            <Route path="/cart" render = {(routerProps) => <Cart {...routerProps} quantityChange={this.quantityChange} cart={this.state.cart} removeItem={this.removeItem} createOrder={this.createOrder}/> } />
             <Route path="/shop" render = {(routerProps) => <ItemsContainer {...routerProps} addToCart={this.addToCart} /> } />
             <Route path="/signin" render = {(routerProps) => <Signin {...routerProps} loggedIn={this.login} /> } />
             <Route path="/" render = {() => <Home /> } />

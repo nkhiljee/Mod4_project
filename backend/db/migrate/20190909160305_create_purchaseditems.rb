@@ -1,15 +1,14 @@
-class CreateItems < ActiveRecord::Migration[5.2]
+class CreatePurchaseditems < ActiveRecord::Migration[5.2]
   def change
-    create_table :items do |t|
+    create_table :purchaseditems do |t|
+
       t.string :name
       t.string :img_url
       t.string :description
       t.integer :price
       t.integer :quantity
       t.string :classification
-
-
-      # t.timestamps
+      t.integer :order_id
     end
   end
 end
