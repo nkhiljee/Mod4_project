@@ -11,8 +11,8 @@ export default class Home extends Component {
 
     move = (e) => {
         let bg = {
-            backgroundPositionX: -e.screenX / 15 + "px",
-            backgroundPositionY: -e.screenY / 15 + "px"
+            backgroundPositionX: -e.screenX / 25 + "px",
+            backgroundPositionY: -e.screenY / 25 + "px"
         }
         this.setState({
             bg: bg
@@ -31,7 +31,7 @@ export default class Home extends Component {
                 </div>
 
                 <div className="category">
-                    <h1>ARM YOUR INTENTIONS</h1>
+                    <h1>Arm Your Intentions</h1>
                     <div className="row" id="row">
                         <div className="col-sm">
                             <div className="card" style={{width: "18rem"}}>

@@ -9,26 +9,34 @@ export default class Signin extends Component {
     }
 
     login = (e) => {
+        console.log(this.state.email)
+        console.log(this.state.password)
+
         e.preventDefault()
-    
-        fetch('http://localhost:3000/api/v1/login', {
-          method: 'POST',
-          headers:{
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
+
+        if (this.state.password == "" || this.state.email == "") {
+          alert("Please type in your login information and try again")
+        } else {
+          fetch('http://localhost:3000/api/v1/login', {
+            method: 'POST',
+            headers:{
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              email: this.state.email,
+              password: this.state.password
+            })
           })
-        })
-        .then(res => res.json())
-        .then(data => {
-            localStorage.token = data.token
-            localStorage.id = data.id
-            this.props.history.push("/shop")
-            this.props.loggedIn()
-            // localStorage.setItem("token",data.token)
-        })
+          .then(res => res.json())
+          .then(data => {
+              localStorage.token = data.token
+              localStorage.id = data.id
+              this.props.history.push("/shop")
+              this.props.loggedIn()
+          })
+        }
+    
+
       }
 
 
