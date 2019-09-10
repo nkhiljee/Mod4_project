@@ -282,7 +282,7 @@ body
 {
   padding-left: 140px;
   font-family: 'Oswald', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   text-align: left;
 
 }
@@ -291,7 +291,7 @@ body
 {
   padding-left: 160px;
   font-family: 'Oswald', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   text-align: left;
 
 }
@@ -385,7 +385,7 @@ body
 
 #card-desc
 {
-  max-height: 70px;
+  height: 70px;
   overflow: hidden;
 }
 
@@ -413,6 +413,7 @@ body
 #cartempty
 {
   font-family: 'Oswald', sans-serif;
+  font-size: 19px;
   color: rgb(153, 49, 49)
 
 }

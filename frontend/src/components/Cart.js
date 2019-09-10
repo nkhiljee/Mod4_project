@@ -205,7 +205,7 @@ export default class Cart extends Component {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item title" id="yourcart">Your Order was Finalized</li>
                                     {
-                                    <li className="list-group-item title" id="cartempty"><span>Your order has been submitted. We will contact you soon with your shipping information. Thank you for shopping with us!</span></li>
+                                    <li className="list-group-item title" id="cartempty"><span>Your order has been submitted. <br/>We will contact you soon with your shipping information. <br/> Thank you for shopping with us!</span></li>
                                     } 
                                     <li className="list-group-item title"><a href="/shop"><button className="btn btn-success">Shop</button></a></li>
                                 </ul>

@@ -12,26 +12,26 @@ class SimpleMap extends React.Component {
       selectedPlace: {}
     }
     // binding this to event-handler functions
-    this.onMarkerClick = this.onMarkerClick.bind(this);
-    this.onMapClick = this.onMapClick.bind(this);
+    // this.onMarkerClick = this.onMarkerClick.bind(this);
+    // this.onMapClick = this.onMapClick.bind(this);
   }
 
-  onMarkerClick = (props, marker, e) => {
-    this.setState({
-      selectedPlace: props,
-      activeMarker: marker,
-      showingInfoWindow: true
-    });
-  }
+  // onMarkerClick = (props, marker, e) => {
+  //   this.setState({
+  //     selectedPlace: props,
+  //     activeMarker: marker,
+  //     showingInfoWindow: true
+  //   });
+  // }
 
-  onMapClick = (props) => {
-    if (this.state.showingInfoWindow) {
-      this.setState({
-        showingInfoWindow: false,
-        activeMarker: null
-      });
-    }
-  }
+  // onMapClick = (props) => {
+  //   if (this.state.showingInfoWindow) {
+  //     this.setState({
+  //       showingInfoWindow: false,
+  //       activeMarker: null
+  //     });
+  //   }
+  // }
   
   render() {
     const style = {
@@ -46,14 +46,14 @@ class SimpleMap extends React.Component {
         xs = { 11 }
         style = { style }
         google = { this.props.google }
-        onClick = { this.onMapClick }
+        // onClick = { this.onMapClick }
         zoom = { 12 }
         initialCenter = {{ lat: 31.114181, lng: -97.743882 }}
         mapTypeControl={false}
         disableDefaultUI={true}
       >
         <Marker
-          onClick = { this.onMarkerClick }
+          // onClick = { this.onMarkerClick }
           title = { "Military Supply" }
           position = {{ lat: 31.114181, lng: -97.743882 }}
           name = { "Military Supply" }

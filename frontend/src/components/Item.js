@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
 
 export default class Item extends Component {
     render() {
@@ -10,7 +11,11 @@ export default class Item extends Component {
                         <h5 className="card-title"><strong>{this.props.item.name}</strong></h5>
                         <p className="card-text" id="card-desc">{this.props.item.description}</p>
                         <p className="card-text"><strong>Price: ${this.props.item.price}</strong></p>
-                        <button type="button" className="btn btn-success" onClick={() => this.props.addToCart(this.props.item)} data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Add to Cart</button>
+                        {/* <button type="button" className="btn btn-success" onClick={() => this.props.addToCart(this.props.item)}>Add to Cart</button> */}
+                        <Button id="PopoverFocus" type="button" className="btn btn-success" onClick={() => this.props.addToCart(this.props.item)}>Add to Cart</Button>
+                        <UncontrolledPopover trigger="focus" placement="bottom" target="PopoverFocus">
+                            <PopoverHeader>Added to Cart</PopoverHeader>
+                        </UncontrolledPopover>
                     </div>
                 </div>
             </div>
