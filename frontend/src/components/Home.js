@@ -11,7 +11,7 @@ export default class Home extends Component {
 
     move = (e) => {
         let bg = {
-            backgroundPositionX: -e.screenX / 15 + "px",
+            // backgroundPositionX: -e.screenX / 15 + "px",
             backgroundPositionY: -e.screenY / 15 + "px"
         }
         this.setState({

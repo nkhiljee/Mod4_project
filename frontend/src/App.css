@@ -132,6 +132,8 @@ body
   height: calc(100vh - 65px)!important;
   background-color: #5a6346 !important;
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://demo.gridgum.com/wordpress/military/wp-content/uploads/2015/04/slide05.jpg);
+  background-size: 100vw;
+  /* width: calc(100vw) !important; */
 }
 
 .darkblock

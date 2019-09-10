@@ -15,7 +15,7 @@ class SimpleMap extends React.Component {
     // this.onMarkerClick = this.onMarkerClick.bind(this);
     // this.onMapClick = this.onMapClick.bind(this);
   }
-
+///NOTE= install first this to be able to use the map.
 //   onMarkerClick = (props, marker, e) => {
 //     this.setState({
 //       selectedPlace: props,
@@ -41,7 +41,8 @@ class SimpleMap extends React.Component {
       "text-align": "center"
     //   position: 'absolute' 31.114181, -97.743882
     }
-    console.log(this.props.google)
+    // console.log(this.props.google
+
     return (
       <Map
         item
@@ -71,7 +72,7 @@ class SimpleMap extends React.Component {
   }
 }
 export default GoogleApiWrapper({
-    apiKey: "AIzaSyCMsUZdVxb-1l7OCVKWTIWMt1BlyGUQEh0  "
+    apiKey: ""
 })(SimpleMap)
 
 

@@ -22,12 +22,14 @@ class App extends React.Component {
       loggedIn: !this.state.loggedIn
     })
   }
-
+// Add Item To Cart USING THIS METHOD
   addToCart = (e) => {
+  console.log(e)
     const distinct = (value, index, self) => {
       let selfie = (self.map(i => i.id))
       return selfie.indexOf(value.id) === index
     } 
+    
     this.setState({
       cart: [...this.state.cart, e],
     }, () => {    
@@ -36,7 +38,7 @@ class App extends React.Component {
     })
   })
   }
-
+// HOW CHANGE THE QUANTITY OF THE ITEMS INSIDE THE CART
   quantityChange = (e, item) => {
     let array = this.state.cart.map(i => {
       if (i.id === item.id) {
@@ -50,7 +52,7 @@ class App extends React.Component {
       cart: array
     })
   }
-
+// REMOVE ITEM INSIDE THE CART 
   removeItem = (e) => {
     var a = this.state.cart
     a.splice(a.findIndex(i => i.id === e.id),1)
