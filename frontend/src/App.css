@@ -196,25 +196,25 @@ body
 }
 
 
-.col-sm .card
+/* .col-sm .card
 {
   height: 90%;
-}
-
+} */
+/* 
 .col-sm .card img
 {
-  height: 200px;
+  height: 200px; */
   /* width: 200px; */
-}
+/* } */
 
 
-.col-sm h2
+/* .col-sm h2
 {
   padding-top: 20px;
   font-family: 'Oswald', sans-serif;
   font-size: 34px;
 
-}
+} */
 
 .col-sm p
 {
@@ -224,11 +224,11 @@ body
 .how
 {
   /* background-color: #819359 !important; */
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
-  height: 400px;
-  color: #efe7d5;
-  padding-left:100px;
-  padding-right:100px
+  /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg); */
+  /* height: 400px; */
+  /* color: #efe7d5; */
+  /* padding-left:100px; */
+  /* padding-right:100px */
 }
 
 .how h1
@@ -262,7 +262,7 @@ body
 .about
 {
   background-color: rgba(239,231,213);
-  /* background-image: linear-gradient(rgba(239,231,213,0.6),rgba(239,231,213,0.6)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg); */
+  background-image: linear-gradient(rgba(239,231,213,0.6),rgba(239,231,213,0.6)),url(http://demo.gridgum.com/wordpress/military/wp-content/themes/military/images/bg-main-dark.jpg);
   height: 410px;
   position: relative
 }
@@ -496,7 +496,7 @@ body
 {
   text-align: center;
   height: calc(100vh - 65px)!important;
-  /* height: 100% */
+  /* height: 100%  */
 }
 
 .signin h1
